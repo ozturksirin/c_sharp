@@ -1,0 +1,11 @@
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\obj\Debug\ogrenci_kayıt_sistemi.csproj.AssemblyReference.cache
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\obj\Debug\ogrenci_kayıt_sistemi.Form1.resources
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\obj\Debug\ogrenci_kayıt_sistemi.Properties.Resources.resources
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\obj\Debug\ogrenci_kayıt_sistemi.csproj.GenerateResource.cache
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\obj\Debug\ogrenci_kayıt_sistemi.csproj.CoreCompileInputs.cache
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\bin\Debug\ogrenci_kayıt_sistemi.exe.config
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\bin\Debug\ogrenci_kayıt_sistemi.exe
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\bin\Debug\ogrenci_kayıt_sistemi.pdb
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\obj\Debug\ogrenci_kayıt_sistemi.exe
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\obj\Debug\ogrenci_kayıt_sistemi.pdb
+D:\gorsel_programlama_final_odev\ogrenci_kayıt_sistemi\obj\Debug\ogrenci_kayıt_sistemi.FrmOgretmen.resources

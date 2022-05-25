@@ -34,16 +34,16 @@ namespace ogrenci_kayıt_sistemi
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.MskOgretmenNumara = new System.Windows.Forms.MaskedTextBox();
+            this.TxtOgretmenSifre = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.MskOgrenciNumara = new System.Windows.Forms.MaskedTextBox();
+            this.TxtOgrenciSifre = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnOgretmenGiris = new System.Windows.Forms.Button();
+            this.BtnOgrGiris = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,10 +53,10 @@ namespace ogrenci_kayıt_sistemi
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Silver;
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.BtnOgretmenGiris);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.TxtOgretmenSifre);
+            this.groupBox1.Controls.Add(this.MskOgretmenNumara);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(37, 24);
@@ -69,10 +69,10 @@ namespace ogrenci_kayıt_sistemi
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Silver;
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.BtnOgrGiris);
             this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.maskedTextBox2);
+            this.groupBox2.Controls.Add(this.TxtOgrenciSifre);
+            this.groupBox2.Controls.Add(this.MskOgrenciNumara);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Location = new System.Drawing.Point(37, 394);
@@ -100,20 +100,20 @@ namespace ogrenci_kayıt_sistemi
             this.label2.TabIndex = 1;
             this.label2.Text = "ŞİFRE";
             // 
-            // maskedTextBox1
+            // MskOgretmenNumara
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(443, 42);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 2;
+            this.MskOgretmenNumara.Location = new System.Drawing.Point(443, 42);
+            this.MskOgretmenNumara.Name = "MskOgretmenNumara";
+            this.MskOgretmenNumara.Size = new System.Drawing.Size(100, 20);
+            this.MskOgretmenNumara.TabIndex = 2;
             // 
-            // textBox1
+            // TxtOgretmenSifre
             // 
-            this.textBox1.Location = new System.Drawing.Point(443, 106);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.TxtOgretmenSifre.Location = new System.Drawing.Point(443, 106);
+            this.TxtOgretmenSifre.Name = "TxtOgretmenSifre";
+            this.TxtOgretmenSifre.Size = new System.Drawing.Size(100, 20);
+            this.TxtOgretmenSifre.TabIndex = 3;
+            this.TxtOgretmenSifre.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 
@@ -142,19 +142,19 @@ namespace ogrenci_kayıt_sistemi
             this.label4.TabIndex = 1;
             this.label4.Text = "ŞİFRE";
             // 
-            // maskedTextBox2
+            // MskOgrenciNumara
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(459, 65);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 2;
+            this.MskOgrenciNumara.Location = new System.Drawing.Point(459, 65);
+            this.MskOgrenciNumara.Name = "MskOgrenciNumara";
+            this.MskOgrenciNumara.Size = new System.Drawing.Size(100, 20);
+            this.MskOgrenciNumara.TabIndex = 2;
             // 
-            // textBox2
+            // TxtOgrenciSifre
             // 
-            this.textBox2.Location = new System.Drawing.Point(459, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.TxtOgrenciSifre.Location = new System.Drawing.Point(459, 132);
+            this.TxtOgrenciSifre.Name = "TxtOgrenciSifre";
+            this.TxtOgrenciSifre.Size = new System.Drawing.Size(100, 20);
+            this.TxtOgrenciSifre.TabIndex = 3;
             // 
             // pictureBox2
             // 
@@ -165,29 +165,31 @@ namespace ogrenci_kayıt_sistemi
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // BtnOgretmenGiris
             // 
-            this.button1.Location = new System.Drawing.Point(443, 191);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 38);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "GİRİŞ YAP";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnOgretmenGiris.Location = new System.Drawing.Point(443, 191);
+            this.BtnOgretmenGiris.Name = "BtnOgretmenGiris";
+            this.BtnOgretmenGiris.Size = new System.Drawing.Size(100, 38);
+            this.BtnOgretmenGiris.TabIndex = 5;
+            this.BtnOgretmenGiris.Text = "GİRİŞ YAP";
+            this.BtnOgretmenGiris.UseVisualStyleBackColor = true;
+            this.BtnOgretmenGiris.Click += new System.EventHandler(this.BtnOgretmenGiris_Click);
             // 
-            // button2
+            // BtnOgrGiris
             // 
-            this.button2.Location = new System.Drawing.Point(459, 197);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 38);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "GİRİŞ YAP";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnOgrGiris.Location = new System.Drawing.Point(459, 197);
+            this.BtnOgrGiris.Name = "BtnOgrGiris";
+            this.BtnOgrGiris.Size = new System.Drawing.Size(100, 38);
+            this.BtnOgrGiris.TabIndex = 5;
+            this.BtnOgrGiris.Text = "GİRİŞ YAP";
+            this.BtnOgrGiris.UseVisualStyleBackColor = true;
+            this.BtnOgrGiris.Click += new System.EventHandler(this.BtnOgrGiris_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1097, 670);
+            this.ClientSize = new System.Drawing.Size(720, 656);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -205,17 +207,17 @@ namespace ogrenci_kayıt_sistemi
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnOgretmenGiris;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox TxtOgretmenSifre;
+        private System.Windows.Forms.MaskedTextBox MskOgretmenNumara;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnOgrGiris;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TextBox TxtOgrenciSifre;
+        private System.Windows.Forms.MaskedTextBox MskOgrenciNumara;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
     }
