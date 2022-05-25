@@ -31,6 +31,7 @@ namespace ogrenci_kayıt_sistemi
             if(dr.Read())
             {
                 FrmOgretmen frm = new FrmOgretmen();
+                frm.numara = MskOgretmenNumara.Text;
                 frm.Show();
                 this.Hide();
             }
@@ -56,7 +57,9 @@ namespace ogrenci_kayıt_sistemi
             if(dr.Read())
             {
                 FrmOgrenci frm = new FrmOgrenci();
+                frm.numara = MskOgretmenNumara.Text;
                 frm.Show();
+
 
                 MessageBox.Show("Sisteme Hoş Geldiniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();

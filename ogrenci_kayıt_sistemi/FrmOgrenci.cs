@@ -12,6 +12,8 @@ namespace ogrenci_kayıt_sistemi
 {
     public partial class FrmOgrenci : Form
     {
+        internal string numara;
+
         public FrmOgrenci()
         {
             InitializeComponent();
