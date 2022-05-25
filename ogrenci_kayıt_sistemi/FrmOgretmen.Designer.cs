@@ -63,7 +63,7 @@ namespace ogrenci_kayıt_sistemi
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.BtnKaydet = new System.Windows.Forms.Button();
             this.BtnSil = new System.Windows.Forms.Button();
-            this.Btnguncelle = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnListele = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -323,6 +323,7 @@ namespace ogrenci_kayıt_sistemi
             this.BtnHesapla.TabIndex = 6;
             this.BtnHesapla.Text = "HESAPLA";
             this.BtnHesapla.UseVisualStyleBackColor = true;
+            this.BtnHesapla.Click += new System.EventHandler(this.BtnHesapla_Click);
             // 
             // TxtSınav1
             // 
@@ -370,7 +371,7 @@ namespace ogrenci_kayıt_sistemi
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Silver;
             this.groupBox4.Controls.Add(this.BtnListele);
-            this.groupBox4.Controls.Add(this.Btnguncelle);
+            this.groupBox4.Controls.Add(this.BtnGuncelle);
             this.groupBox4.Controls.Add(this.BtnSil);
             this.groupBox4.Controls.Add(this.BtnKaydet);
             this.groupBox4.Location = new System.Drawing.Point(342, 344);
@@ -399,14 +400,15 @@ namespace ogrenci_kayıt_sistemi
             this.BtnSil.Text = "SİL";
             this.BtnSil.UseVisualStyleBackColor = true;
             // 
-            // Btnguncelle
+            // BtnGuncelle
             // 
-            this.Btnguncelle.Location = new System.Drawing.Point(15, 100);
-            this.Btnguncelle.Name = "Btnguncelle";
-            this.Btnguncelle.Size = new System.Drawing.Size(139, 23);
-            this.Btnguncelle.TabIndex = 2;
-            this.Btnguncelle.Text = "GÜNCELLE";
-            this.Btnguncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Location = new System.Drawing.Point(15, 100);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(139, 23);
+            this.BtnGuncelle.TabIndex = 2;
+            this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnListele
             // 
@@ -501,7 +503,7 @@ namespace ogrenci_kayıt_sistemi
         private System.Windows.Forms.Label LblSınav1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button BtnListele;
-        private System.Windows.Forms.Button Btnguncelle;
+        private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnSil;
         private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.DataGridView dataGridView2;

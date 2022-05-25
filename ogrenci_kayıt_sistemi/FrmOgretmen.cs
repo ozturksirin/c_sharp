@@ -96,6 +96,60 @@ namespace ogrenci_kayıt_sistemi
             TxtSifre.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
 
             pictureBox1.ImageLocation = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
+
+            SqlCommand komut = new SqlCommand("Select * From TblNotlar where Ogrıd=(Select ID From TblOgrenci Where Numara=@p1)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", MskNumara.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+
+            while(dr.Read())
+            {
+                TxtSınav1.Text = dr[1].ToString();
+                TxtSınav2.Text = dr[2].ToString();
+                TxtSınav3.Text = dr[3].ToString();
+                TxtProje.Text = dr[4].ToString();
+                TxtOrtalama.Text = dr[5].ToString();
+                TxtDurum.Text = dr[6].ToString();
+            }
+
+            bgl.baglanti().Close();
+
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            //öğrenci bilgilerini güncelleme
+
+            SqlCommand komut = new SqlCommand("update tblogrenci set ad=@p1,soyad=@p2,sıfre=@p3,fotograf=@p4 where numara=@p5", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", TxtAd.Text);
+            komut.Parameters.AddWithValue("@p2", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@p3", TxtSifre.Text);
+            komut.Parameters.AddWithValue("@p4", Fotograf);
+            komut.Parameters.AddWithValue("@p5", MskNumara.Text);
+            komut.ExecuteNonQuery();
+
+            MessageBox.Show("Öğrenci Bilgi Sistemi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            bgl.baglanti().Close();
+            OgrenciListesi();
+        }
+
+        private void BtnHesapla_Click(object sender, EventArgs e)
+        {
+            double sınav1, sınav2, sınav3, proje, ortalama;
+            sınav1 = Convert.ToDouble(TxtSınav1.Text);
+            sınav2 = Convert.ToDouble(TxtSınav2.Text);
+            sınav3 = Convert.ToDouble(TxtSınav3.Text);
+            proje = Convert.ToDouble(TxtProje.Text);
+            ortalama = (sınav1 + sınav2 + sınav3 + proje) / 4;
+            TxtOrtalama.Text = ortalama.ToString();
+            if (ortalama >= 50)
+            {
+                TxtDurum.Text = "True";
+            }
+
+            else
+            {
+                TxtDurum.Text = "False";
+            }
         }
     }
 }
