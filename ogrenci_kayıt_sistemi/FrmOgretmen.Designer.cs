@@ -480,8 +480,9 @@ namespace ogrenci_kayıt_sistemi
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(123, 35);
             this.button4.TabIndex = 7;
-            this.button4.Text = "YARDIM";
+            this.button4.Text = "ÇIKIŞ";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FrmOgretmen
             // 

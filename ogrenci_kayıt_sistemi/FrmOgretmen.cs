@@ -180,12 +180,20 @@ namespace ogrenci_kayıt_sistemi
             FormDuyuruListesi frm = new FormDuyuruListesi();
             frm.Show();
         }
-        
+
         
         private void BtnMesajlar_Click(object sender, EventArgs e)
         {
+            //öğretmen formu
+
             FrmMesajlar frm = new FrmMesajlar();
             frm.Show();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

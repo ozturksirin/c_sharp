@@ -23,16 +23,47 @@ namespace ogrenci_kayıt_sistemi
         void GelenMesajlar()
         {
             SqlCommand komut = new SqlCommand("Select * From TblMesajlar where  alıcı=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", numara);
             SqlDataAdapter da = new SqlDataAdapter(komut);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
 
+        void GidenMesajlar()
+        {
+            SqlCommand komut = new SqlCommand("Select * From TblMesajlar where Gonderen=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", numara);
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+        }
+
         public string numara;
         private void FrmMesajlar_Load(object sender, EventArgs e)
         {
             MskGonderen.Text = numara;
+            GelenMesajlar();
+            GidenMesajlar();
+
+        }
+
+        private void BtnGonder_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into TblMesajlar (Gonderen,Alıcı,Baslı,Icerık)values (@p1,@p2,@p3,@p4)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", MskGonderen.Text);
+            komut.Parameters.AddWithValue("@p2", MskAlıcı.Text);
+            komut.Parameters.AddWithValue("@p3", TxtKonu.Text);
+            komut.Parameters.AddWithValue("@p4", RchMesaj.Text);
+            komut.ExecuteNonQuery();
+
+            MessageBox.Show("Mesajınız İletildi...", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            bgl.baglanti().Close();
+            GelenMesajlar();
+            GidenMesajlar();    
+
 
         }
     }

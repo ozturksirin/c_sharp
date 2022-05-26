@@ -38,15 +38,18 @@ namespace ogrenci_kayıt_sistemi
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.RchMesaj = new System.Windows.Forms.RichTextBox();
+            this.BtnGonder = new System.Windows.Forms.Button();
             this.MskGonderen = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.MskAlıcı = new System.Windows.Forms.MaskedTextBox();
+            this.TxtKonu = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -72,10 +75,11 @@ namespace ogrenci_kayıt_sistemi
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(779, 267);
+            this.tabPage2.Size = new System.Drawing.Size(1099, 266);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "GİDEN KUTUSU";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -83,11 +87,11 @@ namespace ogrenci_kayıt_sistemi
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Silver;
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.maskedTextBox2);
+            this.groupBox1.Controls.Add(this.TxtKonu);
+            this.groupBox1.Controls.Add(this.MskAlıcı);
             this.groupBox1.Controls.Add(this.MskGonderen);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.richTextBox1);
+            this.groupBox1.Controls.Add(this.BtnGonder);
+            this.groupBox1.Controls.Add(this.RchMesaj);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -143,22 +147,23 @@ namespace ogrenci_kayıt_sistemi
             this.dataGridView1.Size = new System.Drawing.Size(1088, 244);
             this.dataGridView1.TabIndex = 0;
             // 
-            // richTextBox1
+            // RchMesaj
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(295, 17);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(680, 162);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
+            this.RchMesaj.Location = new System.Drawing.Point(295, 17);
+            this.RchMesaj.Name = "RchMesaj";
+            this.RchMesaj.Size = new System.Drawing.Size(680, 162);
+            this.RchMesaj.TabIndex = 4;
+            this.RchMesaj.Text = "";
             // 
-            // button1
+            // BtnGonder
             // 
-            this.button1.Location = new System.Drawing.Point(981, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 64);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "GÖNDER";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnGonder.Location = new System.Drawing.Point(981, 68);
+            this.BtnGonder.Name = "BtnGonder";
+            this.BtnGonder.Size = new System.Drawing.Size(116, 64);
+            this.BtnGonder.TabIndex = 5;
+            this.BtnGonder.Text = "GÖNDER";
+            this.BtnGonder.UseVisualStyleBackColor = true;
+            this.BtnGonder.Click += new System.EventHandler(this.BtnGonder_Click);
             // 
             // MskGonderen
             // 
@@ -167,19 +172,27 @@ namespace ogrenci_kayıt_sistemi
             this.MskGonderen.Size = new System.Drawing.Size(100, 20);
             this.MskGonderen.TabIndex = 6;
             // 
-            // maskedTextBox2
+            // MskAlıcı
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(83, 68);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 7;
+            this.MskAlıcı.Location = new System.Drawing.Point(83, 68);
+            this.MskAlıcı.Name = "MskAlıcı";
+            this.MskAlıcı.Size = new System.Drawing.Size(100, 20);
+            this.MskAlıcı.TabIndex = 7;
             // 
-            // textBox1
+            // TxtKonu
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.TxtKonu.Location = new System.Drawing.Point(83, 108);
+            this.TxtKonu.Name = "TxtKonu";
+            this.TxtKonu.Size = new System.Drawing.Size(100, 20);
+            this.TxtKonu.TabIndex = 8;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1093, 260);
+            this.dataGridView2.TabIndex = 0;
             // 
             // FrmMesajlar
             // 
@@ -193,9 +206,11 @@ namespace ogrenci_kayıt_sistemi
             this.Load += new System.EventHandler(this.FrmMesajlar_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,10 +226,11 @@ namespace ogrenci_kayıt_sistemi
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TextBox TxtKonu;
+        private System.Windows.Forms.MaskedTextBox MskAlıcı;
         private System.Windows.Forms.MaskedTextBox MskGonderen;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button BtnGonder;
+        private System.Windows.Forms.RichTextBox RchMesaj;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
