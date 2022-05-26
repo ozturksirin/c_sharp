@@ -130,6 +130,23 @@ namespace ogrenci_kayıt_sistemi
             MessageBox.Show("Öğrenci Bilgi Sistemi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             bgl.baglanti().Close();
             OgrenciListesi();
+
+            //not bilgilerini güncelleme
+            SqlCommand komut2 = new SqlCommand("update TblNotlar set Sınav1=@p1,Sınav2=@p2,Sınav3=@p3,Proje=@p4,Ortalama=@p5,Durum=@p6 where OGRID=(Select ID From TblOgrenci Where Numara=@p7)", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", TxtSınav1.Text);
+            komut2.Parameters.AddWithValue("@p2", TxtSınav2.Text);
+            komut2.Parameters.AddWithValue("@p3", TxtSınav3.Text);
+            komut2.Parameters.AddWithValue("@p4", TxtProje.Text);
+            komut2.Parameters.AddWithValue("@p5", Convert.ToDecimal(TxtOrtalama.Text));
+            komut2.Parameters.AddWithValue("@p6", TxtDurum.Text);
+            komut2.Parameters.AddWithValue("@p7", MskNumara.Text);
+            komut2.ExecuteNonQuery();
+
+            MessageBox.Show("Öğrenci Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            bgl.baglanti().Close();
+            OgrenciListesi();
+            NotListesi();
+
         }
 
         private void BtnHesapla_Click(object sender, EventArgs e)
@@ -150,6 +167,12 @@ namespace ogrenci_kayıt_sistemi
             {
                 TxtDurum.Text = "False";
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDuyuruOlustur frm = new FormDuyuruOlustur();
+            frm.Show();
         }
     }
 }

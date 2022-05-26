@@ -30,44 +30,48 @@ namespace ogrenci_kayıt_sistemi
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.LblAdSoyad = new System.Windows.Forms.Label();
-            this.LblNumaraGB1 = new System.Windows.Forms.Label();
             this.LblNumara = new System.Windows.Forms.Label();
+            this.LblNumaraGB1 = new System.Windows.Forms.Label();
+            this.LblAdSoyad = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.LblNumaraGB2 = new System.Windows.Forms.Label();
-            this.LblAdGB2 = new System.Windows.Forms.Label();
-            this.LblSoyadGB2 = new System.Windows.Forms.Label();
-            this.LblSifreGB2 = new System.Windows.Forms.Label();
-            this.MskNumara = new System.Windows.Forms.MaskedTextBox();
-            this.TxtAd = new System.Windows.Forms.TextBox();
-            this.TxtSoyad = new System.Windows.Forms.TextBox();
-            this.TxtSifre = new System.Windows.Forms.TextBox();
-            this.LblFotograf = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnFotografSec = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LblFotograf = new System.Windows.Forms.Label();
+            this.TxtSifre = new System.Windows.Forms.TextBox();
+            this.TxtSoyad = new System.Windows.Forms.TextBox();
+            this.TxtAd = new System.Windows.Forms.TextBox();
+            this.MskNumara = new System.Windows.Forms.MaskedTextBox();
+            this.LblSifreGB2 = new System.Windows.Forms.Label();
+            this.LblSoyadGB2 = new System.Windows.Forms.Label();
+            this.LblAdGB2 = new System.Windows.Forms.Label();
+            this.LblNumaraGB2 = new System.Windows.Forms.Label();
             this.groupbox3 = new System.Windows.Forms.GroupBox();
-            this.LblSınav1 = new System.Windows.Forms.Label();
-            this.LblSınav2 = new System.Windows.Forms.Label();
-            this.LblSınav3 = new System.Windows.Forms.Label();
-            this.LblProje = new System.Windows.Forms.Label();
-            this.LblOrtalama = new System.Windows.Forms.Label();
-            this.LblDurum = new System.Windows.Forms.Label();
-            this.BtnHesapla = new System.Windows.Forms.Button();
-            this.TxtSınav1 = new System.Windows.Forms.TextBox();
-            this.TxtSınav2 = new System.Windows.Forms.TextBox();
-            this.TxtSınav3 = new System.Windows.Forms.TextBox();
-            this.TxtProje = new System.Windows.Forms.TextBox();
-            this.TxtOrtalama = new System.Windows.Forms.TextBox();
             this.TxtDurum = new System.Windows.Forms.TextBox();
+            this.TxtOrtalama = new System.Windows.Forms.TextBox();
+            this.TxtProje = new System.Windows.Forms.TextBox();
+            this.TxtSınav3 = new System.Windows.Forms.TextBox();
+            this.TxtSınav2 = new System.Windows.Forms.TextBox();
+            this.TxtSınav1 = new System.Windows.Forms.TextBox();
+            this.BtnHesapla = new System.Windows.Forms.Button();
+            this.LblDurum = new System.Windows.Forms.Label();
+            this.LblOrtalama = new System.Windows.Forms.Label();
+            this.LblProje = new System.Windows.Forms.Label();
+            this.LblSınav3 = new System.Windows.Forms.Label();
+            this.LblSınav2 = new System.Windows.Forms.Label();
+            this.LblSınav1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.BtnKaydet = new System.Windows.Forms.Button();
-            this.BtnSil = new System.Windows.Forms.Button();
-            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnListele = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
+            this.BtnSil = new System.Windows.Forms.Button();
+            this.BtnKaydet = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,23 +94,14 @@ namespace ogrenci_kayıt_sistemi
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // LblNumara
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "HOŞGELDİNİZ";
-            // 
-            // LblAdSoyad
-            // 
-            this.LblAdSoyad.AutoSize = true;
-            this.LblAdSoyad.Location = new System.Drawing.Point(120, 20);
-            this.LblAdSoyad.Name = "LblAdSoyad";
-            this.LblAdSoyad.Size = new System.Drawing.Size(35, 13);
-            this.LblAdSoyad.TabIndex = 1;
-            this.LblAdSoyad.Text = "label2";
+            this.LblNumara.AutoSize = true;
+            this.LblNumara.Location = new System.Drawing.Point(120, 68);
+            this.LblNumara.Name = "LblNumara";
+            this.LblNumara.Size = new System.Drawing.Size(35, 13);
+            this.LblNumara.TabIndex = 3;
+            this.LblNumara.Text = "label4";
             // 
             // LblNumaraGB1
             // 
@@ -117,14 +112,23 @@ namespace ogrenci_kayıt_sistemi
             this.LblNumaraGB1.TabIndex = 2;
             this.LblNumaraGB1.Text = "NUMARA";
             // 
-            // LblNumara
+            // LblAdSoyad
             // 
-            this.LblNumara.AutoSize = true;
-            this.LblNumara.Location = new System.Drawing.Point(120, 68);
-            this.LblNumara.Name = "LblNumara";
-            this.LblNumara.Size = new System.Drawing.Size(35, 13);
-            this.LblNumara.TabIndex = 3;
-            this.LblNumara.Text = "label4";
+            this.LblAdSoyad.AutoSize = true;
+            this.LblAdSoyad.Location = new System.Drawing.Point(120, 20);
+            this.LblAdSoyad.Name = "LblAdSoyad";
+            this.LblAdSoyad.Size = new System.Drawing.Size(35, 13);
+            this.LblAdSoyad.TabIndex = 1;
+            this.LblAdSoyad.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "HOŞGELDİNİZ";
             // 
             // groupBox2
             // 
@@ -142,91 +146,10 @@ namespace ogrenci_kayıt_sistemi
             this.groupBox2.Controls.Add(this.LblNumaraGB2);
             this.groupBox2.Location = new System.Drawing.Point(12, 149);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(303, 377);
+            this.groupBox2.Size = new System.Drawing.Size(303, 431);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ÖĞRENCİ";
-            // 
-            // LblNumaraGB2
-            // 
-            this.LblNumaraGB2.AutoSize = true;
-            this.LblNumaraGB2.Location = new System.Drawing.Point(28, 31);
-            this.LblNumaraGB2.Name = "LblNumaraGB2";
-            this.LblNumaraGB2.Size = new System.Drawing.Size(54, 13);
-            this.LblNumaraGB2.TabIndex = 0;
-            this.LblNumaraGB2.Text = "NUMARA";
-            // 
-            // LblAdGB2
-            // 
-            this.LblAdGB2.AutoSize = true;
-            this.LblAdGB2.Location = new System.Drawing.Point(31, 71);
-            this.LblAdGB2.Name = "LblAdGB2";
-            this.LblAdGB2.Size = new System.Drawing.Size(22, 13);
-            this.LblAdGB2.TabIndex = 1;
-            this.LblAdGB2.Text = "AD";
-            // 
-            // LblSoyadGB2
-            // 
-            this.LblSoyadGB2.AutoSize = true;
-            this.LblSoyadGB2.Location = new System.Drawing.Point(31, 101);
-            this.LblSoyadGB2.Name = "LblSoyadGB2";
-            this.LblSoyadGB2.Size = new System.Drawing.Size(44, 13);
-            this.LblSoyadGB2.TabIndex = 2;
-            this.LblSoyadGB2.Text = "SOYAD";
-            // 
-            // LblSifreGB2
-            // 
-            this.LblSifreGB2.AutoSize = true;
-            this.LblSifreGB2.Location = new System.Drawing.Point(31, 133);
-            this.LblSifreGB2.Name = "LblSifreGB2";
-            this.LblSifreGB2.Size = new System.Drawing.Size(38, 13);
-            this.LblSifreGB2.TabIndex = 3;
-            this.LblSifreGB2.Text = "ŞİFRE";
-            // 
-            // MskNumara
-            // 
-            this.MskNumara.Location = new System.Drawing.Point(101, 31);
-            this.MskNumara.Name = "MskNumara";
-            this.MskNumara.Size = new System.Drawing.Size(100, 20);
-            this.MskNumara.TabIndex = 4;
-            // 
-            // TxtAd
-            // 
-            this.TxtAd.Location = new System.Drawing.Point(101, 68);
-            this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(100, 20);
-            this.TxtAd.TabIndex = 5;
-            // 
-            // TxtSoyad
-            // 
-            this.TxtSoyad.Location = new System.Drawing.Point(101, 101);
-            this.TxtSoyad.Name = "TxtSoyad";
-            this.TxtSoyad.Size = new System.Drawing.Size(100, 20);
-            this.TxtSoyad.TabIndex = 6;
-            // 
-            // TxtSifre
-            // 
-            this.TxtSifre.Location = new System.Drawing.Point(101, 133);
-            this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(100, 20);
-            this.TxtSifre.TabIndex = 7;
-            // 
-            // LblFotograf
-            // 
-            this.LblFotograf.AutoSize = true;
-            this.LblFotograf.Location = new System.Drawing.Point(6, 195);
-            this.LblFotograf.Name = "LblFotograf";
-            this.LblFotograf.Size = new System.Drawing.Size(65, 13);
-            this.LblFotograf.TabIndex = 8;
-            this.LblFotograf.Text = "FOTOĞRAF";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(77, 195);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 144);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // BtnFotografSec
             // 
@@ -237,6 +160,87 @@ namespace ogrenci_kayıt_sistemi
             this.BtnFotografSec.Text = "FOTOĞRAF SEÇ";
             this.BtnFotografSec.UseVisualStyleBackColor = true;
             this.BtnFotografSec.Click += new System.EventHandler(this.BtnFotografSec_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(77, 195);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 144);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // LblFotograf
+            // 
+            this.LblFotograf.AutoSize = true;
+            this.LblFotograf.Location = new System.Drawing.Point(6, 195);
+            this.LblFotograf.Name = "LblFotograf";
+            this.LblFotograf.Size = new System.Drawing.Size(65, 13);
+            this.LblFotograf.TabIndex = 8;
+            this.LblFotograf.Text = "FOTOĞRAF";
+            // 
+            // TxtSifre
+            // 
+            this.TxtSifre.Location = new System.Drawing.Point(101, 133);
+            this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.Size = new System.Drawing.Size(100, 20);
+            this.TxtSifre.TabIndex = 7;
+            // 
+            // TxtSoyad
+            // 
+            this.TxtSoyad.Location = new System.Drawing.Point(101, 101);
+            this.TxtSoyad.Name = "TxtSoyad";
+            this.TxtSoyad.Size = new System.Drawing.Size(100, 20);
+            this.TxtSoyad.TabIndex = 6;
+            // 
+            // TxtAd
+            // 
+            this.TxtAd.Location = new System.Drawing.Point(101, 68);
+            this.TxtAd.Name = "TxtAd";
+            this.TxtAd.Size = new System.Drawing.Size(100, 20);
+            this.TxtAd.TabIndex = 5;
+            // 
+            // MskNumara
+            // 
+            this.MskNumara.Location = new System.Drawing.Point(101, 31);
+            this.MskNumara.Name = "MskNumara";
+            this.MskNumara.Size = new System.Drawing.Size(100, 20);
+            this.MskNumara.TabIndex = 4;
+            // 
+            // LblSifreGB2
+            // 
+            this.LblSifreGB2.AutoSize = true;
+            this.LblSifreGB2.Location = new System.Drawing.Point(31, 133);
+            this.LblSifreGB2.Name = "LblSifreGB2";
+            this.LblSifreGB2.Size = new System.Drawing.Size(38, 13);
+            this.LblSifreGB2.TabIndex = 3;
+            this.LblSifreGB2.Text = "ŞİFRE";
+            // 
+            // LblSoyadGB2
+            // 
+            this.LblSoyadGB2.AutoSize = true;
+            this.LblSoyadGB2.Location = new System.Drawing.Point(31, 101);
+            this.LblSoyadGB2.Name = "LblSoyadGB2";
+            this.LblSoyadGB2.Size = new System.Drawing.Size(44, 13);
+            this.LblSoyadGB2.TabIndex = 2;
+            this.LblSoyadGB2.Text = "SOYAD";
+            // 
+            // LblAdGB2
+            // 
+            this.LblAdGB2.AutoSize = true;
+            this.LblAdGB2.Location = new System.Drawing.Point(31, 71);
+            this.LblAdGB2.Name = "LblAdGB2";
+            this.LblAdGB2.Size = new System.Drawing.Size(22, 13);
+            this.LblAdGB2.TabIndex = 1;
+            this.LblAdGB2.Text = "AD";
+            // 
+            // LblNumaraGB2
+            // 
+            this.LblNumaraGB2.AutoSize = true;
+            this.LblNumaraGB2.Location = new System.Drawing.Point(28, 31);
+            this.LblNumaraGB2.Name = "LblNumaraGB2";
+            this.LblNumaraGB2.Size = new System.Drawing.Size(54, 13);
+            this.LblNumaraGB2.TabIndex = 0;
+            this.LblNumaraGB2.Text = "NUMARA";
             // 
             // groupbox3
             // 
@@ -261,59 +265,47 @@ namespace ogrenci_kayıt_sistemi
             this.groupbox3.TabStop = false;
             this.groupbox3.Text = "NOTLAR";
             // 
-            // LblSınav1
+            // TxtDurum
             // 
-            this.LblSınav1.AutoSize = true;
-            this.LblSınav1.Location = new System.Drawing.Point(6, 30);
-            this.LblSınav1.Name = "LblSınav1";
-            this.LblSınav1.Size = new System.Drawing.Size(48, 13);
-            this.LblSınav1.TabIndex = 0;
-            this.LblSınav1.Text = "SINAV 1";
+            this.TxtDurum.Location = new System.Drawing.Point(107, 219);
+            this.TxtDurum.Name = "TxtDurum";
+            this.TxtDurum.Size = new System.Drawing.Size(100, 20);
+            this.TxtDurum.TabIndex = 12;
             // 
-            // LblSınav2
+            // TxtOrtalama
             // 
-            this.LblSınav2.AutoSize = true;
-            this.LblSınav2.Location = new System.Drawing.Point(6, 68);
-            this.LblSınav2.Name = "LblSınav2";
-            this.LblSınav2.Size = new System.Drawing.Size(48, 13);
-            this.LblSınav2.TabIndex = 1;
-            this.LblSınav2.Text = "SINAV 2";
+            this.TxtOrtalama.Location = new System.Drawing.Point(107, 182);
+            this.TxtOrtalama.Name = "TxtOrtalama";
+            this.TxtOrtalama.Size = new System.Drawing.Size(100, 20);
+            this.TxtOrtalama.TabIndex = 11;
             // 
-            // LblSınav3
+            // TxtProje
             // 
-            this.LblSınav3.AutoSize = true;
-            this.LblSınav3.Location = new System.Drawing.Point(6, 109);
-            this.LblSınav3.Name = "LblSınav3";
-            this.LblSınav3.Size = new System.Drawing.Size(48, 13);
-            this.LblSınav3.TabIndex = 2;
-            this.LblSınav3.Text = "SINAV 3";
+            this.TxtProje.Location = new System.Drawing.Point(109, 147);
+            this.TxtProje.Name = "TxtProje";
+            this.TxtProje.Size = new System.Drawing.Size(100, 20);
+            this.TxtProje.TabIndex = 10;
             // 
-            // LblProje
+            // TxtSınav3
             // 
-            this.LblProje.AutoSize = true;
-            this.LblProje.Location = new System.Drawing.Point(12, 150);
-            this.LblProje.Name = "LblProje";
-            this.LblProje.Size = new System.Drawing.Size(42, 13);
-            this.LblProje.TabIndex = 3;
-            this.LblProje.Text = "PROJE";
+            this.TxtSınav3.Location = new System.Drawing.Point(109, 106);
+            this.TxtSınav3.Name = "TxtSınav3";
+            this.TxtSınav3.Size = new System.Drawing.Size(100, 20);
+            this.TxtSınav3.TabIndex = 9;
             // 
-            // LblOrtalama
+            // TxtSınav2
             // 
-            this.LblOrtalama.AutoSize = true;
-            this.LblOrtalama.Location = new System.Drawing.Point(6, 185);
-            this.LblOrtalama.Name = "LblOrtalama";
-            this.LblOrtalama.Size = new System.Drawing.Size(66, 13);
-            this.LblOrtalama.TabIndex = 4;
-            this.LblOrtalama.Text = "ORTALAMA";
+            this.TxtSınav2.Location = new System.Drawing.Point(109, 65);
+            this.TxtSınav2.Name = "TxtSınav2";
+            this.TxtSınav2.Size = new System.Drawing.Size(100, 20);
+            this.TxtSınav2.TabIndex = 8;
             // 
-            // LblDurum
+            // TxtSınav1
             // 
-            this.LblDurum.AutoSize = true;
-            this.LblDurum.Location = new System.Drawing.Point(15, 222);
-            this.LblDurum.Name = "LblDurum";
-            this.LblDurum.Size = new System.Drawing.Size(48, 13);
-            this.LblDurum.TabIndex = 5;
-            this.LblDurum.Text = "DURUM";
+            this.TxtSınav1.Location = new System.Drawing.Point(109, 30);
+            this.TxtSınav1.Name = "TxtSınav1";
+            this.TxtSınav1.Size = new System.Drawing.Size(100, 20);
+            this.TxtSınav1.TabIndex = 7;
             // 
             // BtnHesapla
             // 
@@ -325,47 +317,59 @@ namespace ogrenci_kayıt_sistemi
             this.BtnHesapla.UseVisualStyleBackColor = true;
             this.BtnHesapla.Click += new System.EventHandler(this.BtnHesapla_Click);
             // 
-            // TxtSınav1
+            // LblDurum
             // 
-            this.TxtSınav1.Location = new System.Drawing.Point(109, 30);
-            this.TxtSınav1.Name = "TxtSınav1";
-            this.TxtSınav1.Size = new System.Drawing.Size(100, 20);
-            this.TxtSınav1.TabIndex = 7;
+            this.LblDurum.AutoSize = true;
+            this.LblDurum.Location = new System.Drawing.Point(15, 222);
+            this.LblDurum.Name = "LblDurum";
+            this.LblDurum.Size = new System.Drawing.Size(48, 13);
+            this.LblDurum.TabIndex = 5;
+            this.LblDurum.Text = "DURUM";
             // 
-            // TxtSınav2
+            // LblOrtalama
             // 
-            this.TxtSınav2.Location = new System.Drawing.Point(109, 65);
-            this.TxtSınav2.Name = "TxtSınav2";
-            this.TxtSınav2.Size = new System.Drawing.Size(100, 20);
-            this.TxtSınav2.TabIndex = 8;
+            this.LblOrtalama.AutoSize = true;
+            this.LblOrtalama.Location = new System.Drawing.Point(6, 185);
+            this.LblOrtalama.Name = "LblOrtalama";
+            this.LblOrtalama.Size = new System.Drawing.Size(66, 13);
+            this.LblOrtalama.TabIndex = 4;
+            this.LblOrtalama.Text = "ORTALAMA";
             // 
-            // TxtSınav3
+            // LblProje
             // 
-            this.TxtSınav3.Location = new System.Drawing.Point(109, 106);
-            this.TxtSınav3.Name = "TxtSınav3";
-            this.TxtSınav3.Size = new System.Drawing.Size(100, 20);
-            this.TxtSınav3.TabIndex = 9;
+            this.LblProje.AutoSize = true;
+            this.LblProje.Location = new System.Drawing.Point(12, 150);
+            this.LblProje.Name = "LblProje";
+            this.LblProje.Size = new System.Drawing.Size(42, 13);
+            this.LblProje.TabIndex = 3;
+            this.LblProje.Text = "PROJE";
             // 
-            // TxtProje
+            // LblSınav3
             // 
-            this.TxtProje.Location = new System.Drawing.Point(109, 147);
-            this.TxtProje.Name = "TxtProje";
-            this.TxtProje.Size = new System.Drawing.Size(100, 20);
-            this.TxtProje.TabIndex = 10;
+            this.LblSınav3.AutoSize = true;
+            this.LblSınav3.Location = new System.Drawing.Point(6, 109);
+            this.LblSınav3.Name = "LblSınav3";
+            this.LblSınav3.Size = new System.Drawing.Size(48, 13);
+            this.LblSınav3.TabIndex = 2;
+            this.LblSınav3.Text = "SINAV 3";
             // 
-            // TxtOrtalama
+            // LblSınav2
             // 
-            this.TxtOrtalama.Location = new System.Drawing.Point(107, 182);
-            this.TxtOrtalama.Name = "TxtOrtalama";
-            this.TxtOrtalama.Size = new System.Drawing.Size(100, 20);
-            this.TxtOrtalama.TabIndex = 11;
+            this.LblSınav2.AutoSize = true;
+            this.LblSınav2.Location = new System.Drawing.Point(6, 68);
+            this.LblSınav2.Name = "LblSınav2";
+            this.LblSınav2.Size = new System.Drawing.Size(48, 13);
+            this.LblSınav2.TabIndex = 1;
+            this.LblSınav2.Text = "SINAV 2";
             // 
-            // TxtDurum
+            // LblSınav1
             // 
-            this.TxtDurum.Location = new System.Drawing.Point(107, 219);
-            this.TxtDurum.Name = "TxtDurum";
-            this.TxtDurum.Size = new System.Drawing.Size(100, 20);
-            this.TxtDurum.TabIndex = 12;
+            this.LblSınav1.AutoSize = true;
+            this.LblSınav1.Location = new System.Drawing.Point(6, 30);
+            this.LblSınav1.Name = "LblSınav1";
+            this.LblSınav1.Size = new System.Drawing.Size(48, 13);
+            this.LblSınav1.TabIndex = 0;
+            this.LblSınav1.Text = "SINAV 1";
             // 
             // groupBox4
             // 
@@ -376,33 +380,23 @@ namespace ogrenci_kayıt_sistemi
             this.groupBox4.Controls.Add(this.BtnKaydet);
             this.groupBox4.Location = new System.Drawing.Point(342, 344);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(213, 182);
+            this.groupBox4.Size = new System.Drawing.Size(213, 236);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "ONAY";
             // 
-            // BtnKaydet
+            // BtnListele
             // 
-            this.BtnKaydet.Location = new System.Drawing.Point(18, 20);
-            this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(139, 24);
-            this.BtnKaydet.TabIndex = 0;
-            this.BtnKaydet.Text = "KAYDET";
-            this.BtnKaydet.UseVisualStyleBackColor = true;
-            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
-            // 
-            // BtnSil
-            // 
-            this.BtnSil.Location = new System.Drawing.Point(18, 61);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(139, 23);
-            this.BtnSil.TabIndex = 1;
-            this.BtnSil.Text = "SİL";
-            this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnListele.Location = new System.Drawing.Point(15, 191);
+            this.BtnListele.Name = "BtnListele";
+            this.BtnListele.Size = new System.Drawing.Size(139, 23);
+            this.BtnListele.TabIndex = 3;
+            this.BtnListele.Text = "LİSTELE";
+            this.BtnListele.UseVisualStyleBackColor = true;
             // 
             // BtnGuncelle
             // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(15, 100);
+            this.BtnGuncelle.Location = new System.Drawing.Point(18, 138);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(139, 23);
             this.BtnGuncelle.TabIndex = 2;
@@ -410,14 +404,24 @@ namespace ogrenci_kayıt_sistemi
             this.BtnGuncelle.UseVisualStyleBackColor = true;
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
-            // BtnListele
+            // BtnSil
             // 
-            this.BtnListele.Location = new System.Drawing.Point(15, 139);
-            this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(139, 23);
-            this.BtnListele.TabIndex = 3;
-            this.BtnListele.Text = "LİSTELE";
-            this.BtnListele.UseVisualStyleBackColor = true;
+            this.BtnSil.Location = new System.Drawing.Point(15, 89);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(139, 23);
+            this.BtnSil.TabIndex = 1;
+            this.BtnSil.Text = "SİL";
+            this.BtnSil.UseVisualStyleBackColor = true;
+            // 
+            // BtnKaydet
+            // 
+            this.BtnKaydet.Location = new System.Drawing.Point(18, 39);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(139, 24);
+            this.BtnKaydet.TabIndex = 0;
+            this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // dataGridView2
             // 
@@ -440,11 +444,52 @@ namespace ogrenci_kayıt_sistemi
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(573, 535);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 36);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "DUYURU OLUŞTUR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(767, 536);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 35);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "DUYURU LİSTESİ";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(956, 536);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 36);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "MESAJLAR";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(1118, 536);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(123, 35);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "YARDIM";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // FrmOgretmen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1270, 538);
+            this.ClientSize = new System.Drawing.Size(1271, 592);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.groupBox4);
@@ -509,5 +554,9 @@ namespace ogrenci_kayıt_sistemi
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
