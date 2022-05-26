@@ -69,8 +69,8 @@ namespace ogrenci_kayıt_sistemi
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnDuyuruListesi = new System.Windows.Forms.Button();
+            this.BtnMesajlar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -454,23 +454,25 @@ namespace ogrenci_kayıt_sistemi
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // BtnDuyuruListesi
             // 
-            this.button2.Location = new System.Drawing.Point(767, 536);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 35);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "DUYURU LİSTESİ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnDuyuruListesi.Location = new System.Drawing.Point(761, 535);
+            this.BtnDuyuruListesi.Name = "BtnDuyuruListesi";
+            this.BtnDuyuruListesi.Size = new System.Drawing.Size(123, 35);
+            this.BtnDuyuruListesi.TabIndex = 5;
+            this.BtnDuyuruListesi.Text = "DUYURU LİSTESİ";
+            this.BtnDuyuruListesi.UseVisualStyleBackColor = true;
+            this.BtnDuyuruListesi.Click += new System.EventHandler(this.BtnDuyuruListesi_Click);
             // 
-            // button3
+            // BtnMesajlar
             // 
-            this.button3.Location = new System.Drawing.Point(956, 536);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 36);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "MESAJLAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnMesajlar.Location = new System.Drawing.Point(956, 536);
+            this.BtnMesajlar.Name = "BtnMesajlar";
+            this.BtnMesajlar.Size = new System.Drawing.Size(123, 36);
+            this.BtnMesajlar.TabIndex = 6;
+            this.BtnMesajlar.Text = "MESAJLAR";
+            this.BtnMesajlar.UseVisualStyleBackColor = true;
+            this.BtnMesajlar.Click += new System.EventHandler(this.BtnMesajlar_Click);
             // 
             // button4
             // 
@@ -487,8 +489,8 @@ namespace ogrenci_kayıt_sistemi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1271, 592);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnMesajlar);
+            this.Controls.Add(this.BtnDuyuruListesi);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
@@ -555,8 +557,8 @@ namespace ogrenci_kayıt_sistemi
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnDuyuruListesi;
+        private System.Windows.Forms.Button BtnMesajlar;
         private System.Windows.Forms.Button button4;
     }
 }

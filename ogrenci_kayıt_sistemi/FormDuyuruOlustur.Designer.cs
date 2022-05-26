@@ -32,8 +32,8 @@ namespace ogrenci_kayıt_sistemi
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDuyuruOlustur));
             this.RchDuyuru = new System.Windows.Forms.RichTextBox();
             this.BtnEkle = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnSil = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,23 +58,25 @@ namespace ogrenci_kayıt_sistemi
             this.BtnEkle.UseVisualStyleBackColor = true;
             this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
-            // button2
+            // BtnSil
             // 
-            this.button2.Location = new System.Drawing.Point(167, 192);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 40);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "SİL";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnSil.Location = new System.Drawing.Point(167, 192);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(77, 40);
+            this.BtnSil.TabIndex = 2;
+            this.BtnSil.Text = "SİL";
+            this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
-            // button3
+            // BtnGuncelle
             // 
-            this.button3.Location = new System.Drawing.Point(335, 192);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 40);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "GÜNCELLE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Location = new System.Drawing.Point(335, 192);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(78, 40);
+            this.BtnGuncelle.TabIndex = 3;
+            this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // dataGridView1
             // 
@@ -83,6 +85,7 @@ namespace ogrenci_kayıt_sistemi
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(810, 200);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -100,8 +103,8 @@ namespace ogrenci_kayıt_sistemi
             this.ClientSize = new System.Drawing.Size(835, 447);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnGuncelle);
+            this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.BtnEkle);
             this.Controls.Add(this.RchDuyuru);
             this.Name = "FormDuyuruOlustur";
@@ -117,8 +120,8 @@ namespace ogrenci_kayıt_sistemi
 
         private System.Windows.Forms.RichTextBox RchDuyuru;
         private System.Windows.Forms.Button BtnEkle;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnSil;
+        private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

@@ -174,5 +174,18 @@ namespace ogrenci_kayıt_sistemi
             FormDuyuruOlustur frm = new FormDuyuruOlustur();
             frm.Show();
         }
+
+        private void BtnDuyuruListesi_Click(object sender, EventArgs e)
+        {
+            FormDuyuruListesi frm = new FormDuyuruListesi();
+            frm.Show();
+        }
+        
+        
+        private void BtnMesajlar_Click(object sender, EventArgs e)
+        {
+            FrmMesajlar frm = new FrmMesajlar();
+            frm.Show();
+        }
     }
 }
