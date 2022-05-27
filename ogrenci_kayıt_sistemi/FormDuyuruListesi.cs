@@ -34,7 +34,7 @@ namespace ogrenci_kayıt_sistemi
             SqlCommand komut = new SqlCommand("Select * From TblDuyurular", bgl.baglanti());
 
             SqlDataReader dr = komut.ExecuteReader();
-            while(dr.Read())
+            while (dr.Read())
             {
                 lst.Items.Add(dr[0] + " " + dr[1]);
             }

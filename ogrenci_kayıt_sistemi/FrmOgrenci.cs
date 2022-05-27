@@ -71,5 +71,35 @@ namespace ogrenci_kayıt_sistemi
             }
             
         }
+
+        private void BtnMesajlar_Click(object sender, EventArgs e)
+        {
+            FrmMesajlar frm = new FrmMesajlar();
+            frm.numara = LblNumara.Text;
+
+            frm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormDuyuruListesi frm = new FormDuyuruListesi();
+            frm.Show(); 
+        }
+
+        private void BtnHesapMakinesi_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("Calc.exe");
+
+        }
+
+        private void BtnCikis_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Gerçekten Kapatmak istiyormusunuz?", "Uyarı!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            
+            if(dr==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

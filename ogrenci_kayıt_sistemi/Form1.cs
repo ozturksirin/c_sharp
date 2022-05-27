@@ -57,7 +57,7 @@ namespace ogrenci_kayıt_sistemi
             if(dr.Read())
             {
                 FrmOgrenci frm = new FrmOgrenci();
-                frm.numara = MskOgretmenNumara.Text;
+                frm.numara = MskOgrenciNumara.Text;
                 frm.Show();
 
 

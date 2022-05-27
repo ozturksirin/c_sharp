@@ -97,6 +97,9 @@
     <EmbeddedResource Include="FrmMesajlar.resx">
       <DependentUpon>FrmMesajlar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenci.resx">
+      <DependentUpon>FrmOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmOgretmen.resx">
       <DependentUpon>FrmOgretmen.cs</DependentUpon>
     </EmbeddedResource>
