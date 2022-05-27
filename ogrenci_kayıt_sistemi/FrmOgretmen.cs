@@ -74,15 +74,19 @@ namespace ogrenci_kayıt_sistemi
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("insert into TblOgrenci(ad,soyad,numara,sifre,fotograf)values(@p1,@p2,@p3,@p4,@p5)", bgl.baglanti());
+            
             komut.Parameters.AddWithValue("@p1", TxtAd.Text);
             komut.Parameters.AddWithValue("@p2", TxtSoyad.Text);
             komut.Parameters.AddWithValue("@p3", MskNumara.Text);
             komut.Parameters.AddWithValue("@p4", TxtSifre.Text);
             komut.Parameters.AddWithValue("@p5", Fotograf);
+
             komut.ExecuteNonQuery();
 
             MessageBox.Show("Öğrenci Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             bgl.baglanti().Close();
+
             OgrenciListesi();
             NotListesi();
         }

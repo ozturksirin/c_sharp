@@ -36,7 +36,7 @@ namespace ogrenci_kayıt_sistemi
             komut.Parameters.AddWithValue("@p1", numara);
             SqlDataAdapter da = new SqlDataAdapter(komut);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            da.Fill(dt); //hata var 
             dataGridView2.DataSource = dt;
         }
 
@@ -56,7 +56,7 @@ namespace ogrenci_kayıt_sistemi
             komut.Parameters.AddWithValue("@p2", MskAlıcı.Text);
             komut.Parameters.AddWithValue("@p3", TxtKonu.Text);
             komut.Parameters.AddWithValue("@p4", RchMesaj.Text);
-            komut.ExecuteNonQuery();
+            komut.ExecuteNonQuery(); //hata var executeNonQuery YAzan heryerde hata var
 
             MessageBox.Show("Mesajınız İletildi...", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
